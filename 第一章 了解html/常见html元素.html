@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>链接</h1>
+      <p>
+        a 标签 默认 target = "_self"，规定在何处打开链接文档。
+      </p>
+      <a href="https://cn.bing.com/">在当前窗口打开</a><br />
+      <a href="https://cn.bing.com/" target="_blank">使用_blank在新窗口打开</a>
+      <h2>在指定窗口打开</h2>
+      <p>
+        会发现和 <strong>_blank</strong> 不一样，不是每次点击链接
+        就新建一个窗口。而是如果指定名字的窗口存在，就不会再打开新的窗口
+      </p>
+      <a href="/target/chap1.html" target="view_window">chap 1</a><br />
+      <a href="/target/chap2.html" target="view_window">chap 1</a><br />
+      <h2>在框架中打开窗口</h2>
+      <a href="a_formset.html" target="_blank">查看示例</a>
+    </section>
+  </body>
+</html>
