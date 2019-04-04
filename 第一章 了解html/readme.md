@@ -57,6 +57,9 @@
   - 可以利用form 里面的reset 功能
   - form 提供了 FormData 可以获取整个表单数据 
 
+- property 与 attribute 的区别？
+  -  attribute 是 死的
+  -  property 是 活的
 
 ## html 文档结构
 
@@ -81,6 +84,9 @@ html5 增加的内容，主要是语义化
   - placeholder 自动聚焦
 - em (斜体)/ strong(粗体) 强调
 - i icon 
+
+- 新的api (离线、音视频、图形、实时通信、本地存储、设备能力)
+
 
 ## html 标签分类
 

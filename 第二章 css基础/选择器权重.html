@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #test {
+        color: blue;
+      }
+      .c1.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11 {
+        color: red;
+      }
+      .important {
+        color: red !important;
+      }
+      .test1 {
+        color: blue;
+      }
+
+      .test2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>10个class选择器的权重也没有一个ID选择器的权重高</h1>
+      <div id="test" class="c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11">
+        <pre>
+                #test {
+                    color: blue;
+                }
+                .c1.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11 {
+                    color: red;
+                }
+        </pre>
+      </div>
+    </section>
+    <section>
+      <h1>内联样式优先级高</h1>
+      <div
+        id="test"
+        class="c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11"
+        style="color:green"
+      >
+        <pre>
+                #test {
+                    color: blue;
+                }
+                .c1.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11 {
+                    color: red;
+                }
+        </pre>
+      </div>
+    </section>
+    <section>
+      <h1>!important的权重最高</h1>
+      <div
+        id="test"
+        class="c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 important"
+        style="color:green">
+        <pre>
+                #test {
+                    color: blue;
+                }
+                .c1.c2.c3.c4.c5.c6.c7.c8.c9.c10.c11 {
+                    color: red;
+                }
+                .important {
+                    color: red !important;
+                }
+        </pre>
+      </div>
+    </section>
+    <section>
+      <h1>相同权重 后写的生效</h1>
+      <div class="test2 test1 ">
+        <pre>
+                    .test1 {
+                        color: blue;
+                    }
+                    
+                    .test2 {
+                      color: green;
+                    }
+            </pre>
+      </div>
+    </section>
+  </body>
+</html>
