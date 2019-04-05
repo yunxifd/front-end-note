@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .serif {
+            font-family: serif;
+        }
+
+        .sans-serif {
+            font-family: sans-serif;
+        }
+
+        .monospace {
+            font-family: monospace;
+        }
+
+        .cursive {
+            font-family: cursive;
+        }
+
+        .english {
+            font-family: "monaco";
+        }
+
+        @font-face {
+            font-family: "IF";
+            /* 本地字体文件 */
+            src: url('./IndieFlower.ttf');
+            /* 网络字体 考虑跨域问题 */
+            /* src: */
+        }
+
+        .custom-font {
+            font-family: IF;
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            src: url('iconfont.eot');
+            src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+                url('iconfont.woff2') format('woff2'),
+                url('iconfont.woff') format('woff'),
+                url('iconfont.ttf') format('truetype'),
+                url('iconfont.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>字体组</h1>
+
+        <ul>
+            <li class="serif">衬线字体serif</li>
+            <li class="sans-serif">非衬线字体sans-serif</li>
+            <li class="monospace">等宽字体monospace nihao</li>
+            <li class="cursive">手写体cursive</li>
+            <li class="fantasy">花体 fantasy</li>
+        </ul>
+    </section>
+    <section>
+        <h1>有的字体只支持英文</h1>
+        <p>当设置多个字体时，会根据字符，选择合适的字体，以下面示例</p>
+        <p class="english">hello, world 你好 世界</p>
+    </section>
+    <section>
+        <h1>自定义字体</h1>
+        <p>hello, world 你好 世界</p>
+    </section>
+    <section>
+        <h1>文字图标</h1>
+        参考：<a href="/icon_font_demo/demo_index.html">阿里 iconfont 示例</a>
+    </section>
+</body>
+
+</html>
