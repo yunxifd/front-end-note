@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>border</title>
+    <style>
+        .c1 {
+            width: 400px;
+            height: 200px;
+            border: 2px dashed red;
+        }
+        .c2 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            border-image: url(./border.png) 30 round;
+        }
+        .c3 {
+            width: 0px;
+            height: 200px;
+            border-bottom: 30px red solid;
+            border-right: 10px transparent solid;
+            border-left: 30px transparent solid;
+            /* border-radius: 10px */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>边框</h1>
+        <div class="c1"></div>
+    </section>
+    <section>
+        <h1>边框图片</h1>
+        <div class="c2"></div>
+    </section>
+    <section>
+        <h1>三角形</h1>
+        <div class="c3">
+
+        </div>
+    </section>
+</body>
+</html>
