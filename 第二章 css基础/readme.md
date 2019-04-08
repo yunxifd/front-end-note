@@ -82,5 +82,12 @@ inline元素 默认是以基线对其的;
 - 设置成 display:block;
 - 调整对其方式 vertical-align: bottom;
 
+### 背景
 
+- 背景颜色
+- 渐变色北京
+- 多背景叠加
+- 背景图片和属性 雪碧图
+- base64 
+- 多分辨率适配
 
