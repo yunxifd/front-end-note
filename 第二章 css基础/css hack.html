@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .c1 {
+        height: 80px;
+        width: 200px;
+        width: 180px\9;
+        border: 1px solid red;
+      }
+      .checkbox input:checked + label {
+        color: blue;
+      }
+
+      .tabs {
+        width: 600px;
+        height: 300px;
+        border: 1px solid gray;
+      }
+      .tabs input {
+          display: none;
+      }
+      .tabContent {
+          display: none;
+      }
+      #tab1:checked ~ #tabContent1 {
+          display: block;
+      }
+      #tab2:checked ~ #tabContent2 {
+          display: block;
+      }
+      #tab3:checked ~ #tabContent3 {
+          display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>在ie8上查看 宽度</h1>
+      <div class="c1">
+        nihao
+      </div>
+    </section>
+    <section>
+      <h1>checkbox 根据属性选择器实现切换效果</h1>
+      <div class="checkbox">
+        <input type="checkbox" id="apple" />
+        <label for="apple">苹果</label>
+      </div>
+    </section>
+    <section>
+      <h1>tabs</h1>
+      <div class="tabs">
+        <input type="radio" name="tabs" checked id="tab1" />
+        <label for="tab1">选项卡1</label>
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2">选项卡2</label>
+        <input type="radio" name="tabs" id="tab3" />
+        <label for="tab3">选项卡3</label>
+
+        <div id="tabContent1" class="tabContent">
+          选项卡内容1
+        </div>
+        <div id="tabContent2" class="tabContent">
+          选项卡内容2
+        </div>
+        <div id="tabContent3" class="tabContent">
+          选项卡内容3
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

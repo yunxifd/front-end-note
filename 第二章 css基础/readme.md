@@ -117,3 +117,22 @@ base64图片，虽然减少了http请求数，但是
 - white-sapce 空白处是否断行
 
 `white-spacke:nowrap` 用来设置文本不换行
+
+### 装饰性属性及其他
+
+- 字重 font-weight
+- 斜体 font-style: itatic
+- 下划线 text-decoration
+- 指针 cursor
+
+## css hack
+- hack即不合法但生效的写法
+- 主要用于兼容不同浏览器
+
+###缺点
+难理解 难维护 易失效
+
+### 解决方案  
+特性检测，针对性的添加class
+
+> hack的属性要写在标准属性的后面
