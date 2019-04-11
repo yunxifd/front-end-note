@@ -110,6 +110,10 @@ base64图片，虽然减少了http请求数，但是
 
 ### 文字折行
 
-- overflow-wrap 通用换行控制 
-- word-break 支队多字节文字
+- overflow-wrap(word-wrap) 通用换行控制 
+  - 是否保留单词
+- word-break  针对多字节文字
+  - 中文句子 也是单词
 - white-sapce 空白处是否断行
+
+`white-spacke:nowrap` 用来设置文本不换行
