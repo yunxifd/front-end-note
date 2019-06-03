@@ -1,4 +1,4 @@
-个人经常使用使用[百度云收藏工具](https://wenzhang.baidu.com/tools)，收藏一些好的文章或图片。但是在收藏**知乎专栏文章**的时候，点击**收藏**
+个人经常使用使用[百度云收藏工具](https://wenzhang.baidu.com/tools)，收藏一些好的文章或图片。但是在收藏**知乎专栏文章**的时候，点击**收藏** 没有反应
 
 打开`devtools`,发现控制台报错。
 ![csp error](./images/csp_error.png)
